@@ -1,0 +1,359 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+nav{
+    background-color: rgba(249, 247, 247, 0.8);
+    height: 80px;   
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    
+
+}
+.promociones{
+    background-color: rgb(249, 195, 195);
+    height: 30px;
+    width: 100%;
+    margin-top: 0%;
+    border-radius: 0 0 3px 3px;
+
+}
+.estiloletras{
+    color: rgb(41, 37, 37);
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 2;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;  
+}
+.logo{
+    height: 40px;
+    
+}
+nav ul{
+    float: right;
+    margin: right 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 18px;   
+}
+nav ul li a{
+    color:rgb(225,64,64);
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 5px;
+    font-family: 'coda';
+     
+}
+li a.active, li a:hover{
+    background-color: #a08888ca;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: rgb(122, 114, 114);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+#check{
+    display: none;
+
+}
+.header{
+    background: url(../foto1.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    
+}
+body main h1{
+    text-align: center;
+    color:rgb(225,64,64);
+    font-family: 'coda';
+}
+
+.info{
+    background-position: bottom;
+    color:rgb(225,64,64);
+    font-family: 'coda';
+    font-size: 16px;
+    margin-left: 10px;
+    
+    
+   
+}
+
+.div__contacto__p{
+    color:rgb(225,64,64);
+    font-family: 'coda';
+    font-size: 16px;
+    text-align: center;
+
+}
+.footer{
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 350px;
+}
+.cubo--text{
+    color: #DA4423;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:left;
+    text-justify:left;
+    align-items:flex-end;
+    font-family: 'coda';
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+   
+}
+
+.padre__flex {
+    
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:left;
+    align-items:flex-end;
+    align-items: stretch;
+    
+}
+.cubo1 {
+    
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 5%;
+    background-image:url(../foto2.jpg);
+    background-size: cover;
+    
+
+    
+
+}
+.cubo2 {
+    
+    width: 100vh;
+    height: 280px;
+    align-items: center;
+    text-align: left;
+    margin: 20px;
+    font-family: 'coda';
+    font-size: 16px;
+
+
+}
+
+.cubo--borde {
+    background-color: rgb(192, 107, 37);
+    border: 1px solid black;
+    border: -1;
+}
+
+
+.form{
+    background-color: rgba(214, 194, 194, 0.902);
+    font-family: 'coda';
+    margin: auto;
+    margin-top: 10px;
+    width: 90%;
+    padding: 3.5em 3em;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center;
+    
+}
+.form_titulo{
+    font-family: 'coda';
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+.form_contenedor{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+
+}
+.form_grupo{
+  position: relative;
+  --color: #5757577e;
+}
+.form__input{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px, solid var(--color);
+    font-family: 'coda';
+}
+.form__label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translatey(10px);
+    transition: transform .5s, color .3s;
+ 
+} 
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label{
+    transform: translateY(-12) scale(.7);
+    transform-origin: left top;
+    color: rgb(17, 106, 130);
+
+}
+
+
+@media (max-width: 1024px){
+    .enlace{
+        padding-left: 28px;
+    }
+    nav ul li a{
+        font-size: 16px;
+
+
+    }
+    .cubo1{
+        margin: auto;
+    }
+    .cubo2{
+        margin: auto;
+        padding: auto;
+        align-items: center;
+
+    }
+    .footer{
+        text-align: center;
+    }
+}
+@media (max-width: 858px){
+    .cubo--text{
+    color: #DA4423;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:left;
+    text-justify:left;
+    align-items:flex-end;
+    font-family: 'coda';
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    .p{
+        font-size: 12px;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(249, 247, 247, 0.8);
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        border-radius: 0 10px 10px 0;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+
+    }
+    li a:hover, li a.active{
+        background: none;
+        color:rgb(225,64,64);
+        font-size: 10px;
+        text-align: center;
+        
+
+    }
+    #check:checked ~ ul{
+        left: 0;
+        width: 75%;
+        height: 100%;
+        
+        
+    }
+    header{
+        background-position: center center;
+    } 
+    .cubo1{
+        margin: auto;
+    }
+    .cubo2{
+        margin: auto;
+        font-size: 14px;
+        align-items: center;
+    } 
+    .footer{
+        text-align: center;
+        margin-top: auto;
+    }
+   
+}
+@media (max-width: 700px){
+
+    .cubo1{
+        margin: auto;
+    }
+    .cubo2{
+        margin: 20px 20px 20px 30px;
+        font-size: 14px;
+        align-items: center;
+    }  
+    .footer{
+        display: flex;
+        text-align: center;
+        margin-top: auto;
+    }
+    .cubo--text{
+        color: #DA4423;
+        width: 100%;
+        height: 380px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:left;
+        text-justify:left;
+        align-items:flex-end;
+        font-family: 'coda';
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+       
+    }
+   
+}
